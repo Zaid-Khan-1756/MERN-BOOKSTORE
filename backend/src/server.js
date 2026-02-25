@@ -9,11 +9,11 @@ dotenv.config()
 const app=express()
 const port=process.env.PORT || 3001
 
-// app.use(cors(
-//     {
-//         origin: `http://localhost:5173`
-//     }
-// ))
+app.use(cors(
+    {
+        //origin: `http://localhost:5173`
+    }
+))
 
 // app.get('/',(req,res)=>{
 //     res.status(200).json("Hello")
